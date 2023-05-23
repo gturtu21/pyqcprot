@@ -42,7 +42,12 @@ gcc http://gcc.gnu.org/
 
 Method 1: 
 To compile the extension in the directory in which qcprot.pyx resides:
-$ python setup.py build_ext --inplace
+$ python3 setup.py build_ext --inplace
+To compile the extension in the directory in which qcprot.pyx resides
+and install the module :
+$ python3 setup.py build_ext 
+$ python3 setup.py install   
+For the last command you need superuser permissions.
 
 For further information on compiling cython extensions see:
 http://docs.cython.org/src/userguide/source_files_and_compilation.html
@@ -58,4 +63,7 @@ See example.py for a simple example
 
 For an example using the MDAnalysis package (http://code.google.com/p/mdanalysis/) 
 see mdanalysis_example.py
+
+
+
  
