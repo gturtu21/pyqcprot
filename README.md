@@ -1,6 +1,6 @@
-=====================
-  PyQCPROT README
-=====================
+
+# PyQCPROT README
+
 
 Author:   Joshua L. Adelman, University of Pittsburgh 
 Contact:  jla65@pitt.edu
