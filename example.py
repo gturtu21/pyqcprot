@@ -68,6 +68,8 @@ frag_b[2][6] =  17.996
 # Allocate rotation array
 rot = numpy.zeros((9,),dtype=numpy.float64) 
 
+weight = None #numpy.ones((N,),dtype=numpy.float64) 
+
 # Calculate center of geometry
 comA = numpy.sum(frag_a,axis=1)/N
 comB = numpy.sum(frag_b,axis=1)/N 
@@ -76,12 +78,14 @@ comB = numpy.sum(frag_b,axis=1)/N
 frag_a = frag_a - comA.reshape(3,1)
 frag_b = frag_b - comB.reshape(3,1)
 
-# Calculate rmsd and rotation matrix
-rmsd = qcp.CalcRMSDRotationalMatrix(frag_a,frag_b,N,rot,None)
 
-print 'qcp rmsd = ',rmsd
-print 'rotation matrix:'
-print rot.reshape((3,3))
+# Calculate rmsd and rotation matrix
+rmsd = qcp.CalcRMSDRotationalMatrix(frag_a,frag_b,N,rot, weight)
+
+print( 'qcp rmsd = ',rmsd)
+print( 'rotation matrix:')
+print( rot.reshape((3,3)))
+
 
 # Calculate rmsd after applying rotation
 def rmsd(a,b):
@@ -91,7 +95,7 @@ def rmsd(a,b):
 # rotate frag_b to obtain optimal alignment
 frag_br = frag_b.T*numpy.matrix(rot.reshape((3,3)))    
 rmsd = rmsd(frag_br.T,frag_a)
-print 'rmsd after applying rotation: ',rmsd
+print('rmsd after applying rotation: ',rmsd)
 
 
 

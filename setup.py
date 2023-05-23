@@ -16,7 +16,7 @@ except ImportError:
     use_cython = False
     cmdclass = {}
 finally:
-    print 'use_cython: {}'.format(use_cython)
+    print('use_cython: {}'.format(use_cython))
 
 ext_modules = [Extension("pyqcprot", ["pyqcprot.{}".format('pyx' if use_cython else 'c')],
                 include_dirs=[numpy_include],
