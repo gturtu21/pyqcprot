@@ -1,8 +1,8 @@
 #  PyQCPROT 
 
-Author:   Joshua L. Adelman, University of Pittsburgh 
+Original author:   Joshua L. Adelman, University of Pittsburgh (contact:  jla65@pitt.edu)
 
-Contact:  jla65@pitt.edu
+Fork mantainer:    Giorgio Turtu', University of Bologna(contact: giorgio.turtu2@unibo.it)
 
 PyQCPROT is a python/cython implementation of Douglas Theobald's QCP method for
 calculating the minimum RMSD between two structures and determining the optimal 
