@@ -2,7 +2,7 @@
 
 Original author:   Joshua L. Adelman, University of Pittsburgh (contact:  jla65@pitt.edu)
 
-Fork mantainer:    Giorgio Turtu', University of Bologna(contact: giorgio.turtu2@unibo.it)
+Fork mantainer:    Giorgio Turtu', University of Bologna (contact: giorgio.turtu2@unibo.it)
 
 PyQCPROT is a python/cython implementation of Douglas Theobald's QCP method for
 calculating the minimum RMSD between two structures and determining the optimal 
@@ -22,8 +22,7 @@ If you use this QCP rotation calculation method in a publication, please referen
       "Fast determination of the optimal rotational matrix for macromolecular superpositions."
       J. Comput. Chem. 31, 1561-1563. 
 
-License
-======= 
+#     License
 This code code is released under the BSD 3-clause license as noted in the .pyx source code 
 or LICENSE file. 
 The original C code is copyright:
@@ -31,8 +30,7 @@ The original C code is copyright:
 This implementation is copyright
 2011, Joshua L. Adelman
 
-Installation
-============
+#     Installation
 
 This module requires:
 numpy http://numpy.scipy.org/
@@ -41,12 +39,15 @@ gcc http://gcc.gnu.org/
 
 Method 1: 
 To compile the extension in the directory in which qcprot.pyx resides:
-$ python setup.py build_ext --inplace
+```
+python3 setup.py build_ext --inplace
+```
 
 To install module instead:
-
-$ python setup.py build_ext 
-$ python setup.py install 
+```
+python3 setup.py build_ext 
+python3 setup.py install 
+```
 The last command requires admin permissions.
 
 For further information on compiling cython extensions see:
@@ -56,8 +57,7 @@ Method 2:
 If you do not have cython installed, you can build the extension directly from the cython generated
 pyqcprot.c. This is handled automatically by setup.py.
 
-Example Usage
-=============
+#     Example Usage
 
 See example.py for a simple example
 
