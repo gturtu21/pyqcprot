@@ -1,6 +1,7 @@
 #  PyQCPROT 
 
 Author:   Joshua L. Adelman, University of Pittsburgh 
+
 Contact:  jla65@pitt.edu
 
 PyQCPROT is a python/cython implementation of Douglas Theobald's QCP method for
