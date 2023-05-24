@@ -63,4 +63,6 @@ See example.py for a simple example
 
 For an example using the MDAnalysis package (http://code.google.com/p/mdanalysis/) 
 see mdanalysis_example.py
- 
+
+NOTES: mdanalysis_example.py refers to an old MDAnalysis version.
+
